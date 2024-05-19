@@ -36,7 +36,7 @@ if st.button("Enviar"):
     total_acessos = atualizar_contador()
 
     # Criar uma instância do cliente Gradio
-    client = Client("FabioSantos/chatbot_cf", hf_token="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")
+    client = Client("FabioSantos/chatbot_cf", hf_token="seu token HF aqui")
     
     # Fazer uma previsão com a pergunta inserida
     result = client.predict(question, api_name="/predict")
